@@ -59,3 +59,31 @@ my_family_ages.sort!.reverse!
 p my_family_ages
 #4
 fav_movies[:"Beauty and the Beast"] = "November 22, 1991", "March 17, 2017"
+
+p "*===Exercise 4===*"
+#1
+my_family_ages.each do |age|
+  if age < 30
+    p age
+  end
+end
+#2
+family_ages.each do |name, age|
+  if age < 40
+    p "#{name} is young."
+  else
+    p "#{name} is old."
+  end
+end
+#3
+total_heads = 0
+flips_of_the_coin.each do |flip|
+  if flip == "heads"
+    total_heads += 1
+  end
+end
+p total_heads
+#4
+fav_artists.delete("NSYNC")
+#5
+city_population[:"Kyoto"] = "2,610,400"
