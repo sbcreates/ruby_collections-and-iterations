@@ -17,7 +17,7 @@ dictionary = {"chemical": "a compound or substance that has been purified or pre
 fav_movies = {"Mean Girls": "April 30, 2004", "The Little Mermaid": "November 17, 1989", "Clueless": "July 19, 1995"}
 
 
-city_population = {"Halifax": '403,131', "New York": '8,537,673', "Kyoto": '2,610,353'}
+city_population = {"Halifax": 403131, "New York": 8537673, "Kyoto": 2610353}
 
 family_ages = {"Me": 30, "Mallory": 32, "Stanton": 28, "Blaise": 45, "Penelope": 47, "Mom": 68, "Dad": 67}
 
@@ -37,7 +37,7 @@ p "*===Exercise 2===*"
 #1
 p fav_colors.last(1)
 #2
-city_population[:"Cairo"] = "9,278,441"
+city_population[:"Cairo"] = 9278441
 #3
 flips_of_the_coin.reverse!
 #4
@@ -80,4 +80,29 @@ p total_heads
 #4
 fav_artists.delete("NSYNC")
 #5
-city_population[:"Kyoto"] = "2,610,400"
+city_population[:"Kyoto"] = 2610400
+
+p "*===Exercise 5===*"
+#1
+total_city_population = 0
+city_population.each do |city, population|
+  total_city_population += population
+end
+p total_city_population
+#2
+family_ages.each do |name, age|
+  if age < 40
+    p "#{name} is young."
+  else
+    p "#{name} is old."
+  end
+end
+#3
+p fav_colors.last(2)
+#4
+my_family_ages.each do |age|
+  age += 1
+end
+p my_family_ages
+#5
+fav_colors = :pink, :purple
