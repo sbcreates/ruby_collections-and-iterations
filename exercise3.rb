@@ -20,3 +20,42 @@ fav_movies = {"Mean Girls": "April 30, 2004", "The Little Mermaid": "November 17
 city_population = {"Halifax": '403,131', "New York": '8,537,673', "Kyoto": '2,610,353'}
 
 family_ages = {"Me": 30, "Mallory": 32, "Stanton": 28, "Blaise": 45, "Penelope": 47, "Mom": 68, "Dad": 67}
+
+p "*===Exercise 1===*"
+#1
+p flips_of_the_coin
+#2
+p fav_colors[0]
+#3
+p my_family_ages.sort
+#4
+my_family_ages << 0
+#5
+p fav_movies[:mean_girls]
+
+p "*===Exercise 2===*"
+#1
+p fav_colors.last(1)
+#2
+city_population[:cairo] = "9,278,441"
+#3
+flips_of_the_coin.reverse!
+#4
+p city_population[:cairo]
+#5
+fav_artists.each do |band|
+  p "I think #{band} is great"
+end
+
+p "*===Exercise 3===*"
+#1
+p fav_artists[0..1]
+#2
+fav_movies.each do |movie, date|
+  p "#{movie} came out in #{date}."
+end
+#3
+my_family_ages.sort!.reverse!
+p my_family_ages
+#4
+fav_movies[:"Beauty and the Beast"] = "November 22, 1991", "March 17, 2017"
