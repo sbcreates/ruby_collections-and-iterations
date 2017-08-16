@@ -19,3 +19,12 @@ fav_movies = {mean_girls: "April 30, 2004", the_little_mermaid: "November 17, 19
 city_population = {halifax: '403,131', new_york: '8,537,673', kyoto: '2,610,353'}
 
 family_ages = {me: 30, mallory: 32, stanton: 28, blaise: 45, penelope: 47, mom: 68, dad: 67}
+
+p flips_of_the_coin
+p fav_colors[0]
+p my_family_ages.sort
+
+my_family_ages << 0
+p my_family_ages
+
+p fav_movies[:mean_girls]
